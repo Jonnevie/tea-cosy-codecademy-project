@@ -50,7 +50,7 @@ nav {
 
 
 .main__banner__section img {
-    width: 1200px;
+    min-width: 1200px;
     height: 700px;
 
 }
@@ -60,7 +60,7 @@ nav {
     display: block;
     z-index: 5;
     margin: auto;
-    width: 1200px;
+    min-width: 1200px;
     position: relative;
     bottom: 420px;
     padding: 20px;
@@ -77,6 +77,7 @@ nav {
 
 
 .first__row__tea img {
+    box-sizing: content-box;
     height: 200px;
     width: 300px;
     padding: 20px;
@@ -95,21 +96,18 @@ nav {
 }
 
 
-.first__row__tea h4 {
-   
- 
-}
-
 .second__row__tea img {
     height: 200px;
     width: 300px;
     padding: 20px;
+    box-sizing: content-box;
  
 }
 
 .second__row__tea {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -119,6 +117,7 @@ nav {
     height: 500px;
     width: 1200px;   
     margin: auto;
+
 }
 
 .locations h2 {
@@ -129,7 +128,8 @@ nav {
 }
 
 .location__flex {
-    display: flex;
+    display: flex;    
+    flex-wrap: wrap;
     justify-content: center;
     background-color: transparent;
 
