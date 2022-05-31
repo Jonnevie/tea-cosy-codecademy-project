@@ -60,7 +60,7 @@ nav {
     display: block;
     z-index: 5;
     margin: auto;
-    min-width: 1200px;
+    max-width: 1200px;
     position: relative;
     bottom: 420px;
     padding: 20px;
@@ -118,6 +118,7 @@ nav {
     width: 1200px;   
     margin: auto;
 
+
 }
 
 .locations h2 {
@@ -130,17 +131,19 @@ nav {
 .location__flex {
     display: flex;    
     flex-wrap: wrap;
+    margin: auto;
     justify-content: center;
     background-color: transparent;
 
 }
 
-.downtown {
+.downtown, .eastBayside, .oakdale {
     height: 300px;
     width: 300px;
     position: relative;
     top: 75px;
     margin: 20px; 
+    flex-wrap: wrap;
   
 }
 
@@ -149,27 +152,9 @@ nav {
     position: relative;
     top: 25%;
     line-height: 1cm;
-}
-
-
-
-.eastBayside {
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: 75px;
-    margin: 20px; 
 
 }
 
-
-.oakdale {
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: 75px;
-    margin: 20px; 
-}
 
 .address__section {
     height: 200px;
