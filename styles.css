@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+body {
+    width: 100%;
+}
+
 .nav__wrapper {
     z-index: 999;    
     position: sticky;
@@ -50,7 +54,7 @@ nav {
 
 
 .main__banner__section img {
-    min-width: 1200px;
+    width: 90%;
     height: 700px;
 
 }
@@ -60,7 +64,7 @@ nav {
     display: block;
     z-index: 5;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1500px;
     position: relative;
     bottom: 420px;
     padding: 20px;
@@ -114,10 +118,12 @@ nav {
 /* Third section */
 .locations {
     background-image: url('./Resources/img-locations-background.jpeg');
-    height: 500px;
-    width: 1200px;   
+    
+    min-height: 500px;
+    flex-wrap: wrap;
+    max-width: 1200px;   
     margin: auto;
-
+    padding: 0px 0px 100px 0px;
 
 }
 
@@ -129,11 +135,13 @@ nav {
 }
 
 .location__flex {
-    display: flex;    
+    display: flex;
+    flex-grow: start;    
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
     background-color: transparent;
+
 
 }
 
