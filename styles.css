@@ -12,11 +12,14 @@
     text-align: center;
 }
 
+.nav__wrapper {
+    z-index: 999;    
+    position: sticky;
+    top: 0;  
+}
+
 
 nav {
-    position: fixed;
-    top: 0;
-    z-index: 999;
     height: 69px;
     border-bottom:  1px solid seashell;
     width: 100vw;
@@ -45,25 +48,145 @@ nav {
     height: 100%;
 }
 
-.main__banner__section {
-margin-top: 69px;
-/* position: relative; */
-
-}
 
 .main__banner__section img {
-    max-width: 1200px;
+    width: 1200px;
     height: 700px;
-    width: 100%;
+
 }
 
 .main__banner__text {
     background-color: black;
+    display: block;
     z-index: 5;
     margin: auto;
     width: 1200px;
-    position:relative;
-    top: 400px;
+    position: relative;
+    bottom: 420px;
     padding: 20px;
 }
 
+.tea {
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.tea h4 {
+    margin-top: 20px;
+}
+
+
+.first__row__tea img {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+ 
+}
+
+
+
+.first__row__tea {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.first__row__tea h4 {
+   
+ 
+}
+
+.second__row__tea img {
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+ 
+}
+
+.second__row__tea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Third section */
+.locations {
+    background-image: url('./Resources/img-locations-background.jpeg');
+    height: 500px;
+    width: 1200px;   
+    margin: auto;
+}
+
+.locations h2 {
+    background-color: transparent;
+    opacity: 1;
+    position: relative;
+    top: 70px;
+}
+
+.location__flex {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+}
+
+.downtown {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 75px;
+    margin: 20px; 
+  
+}
+
+.downtown h3, .downtown p, .eastBayside h3, .eastBayside p, .oakdale h3, .oakdale p {
+    margin: auto;
+    position: relative;
+    top: 25%;
+    line-height: 1cm;
+}
+
+
+
+.eastBayside {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 75px;
+    margin: 20px; 
+
+}
+
+
+.oakdale {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 75px;
+    margin: 20px; 
+}
+
+.address__section {
+    height: 200px;
+    margin: auto;
+}
+
+.address__section h2{
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+
+.address__section h5 {
+    padding: 10px;
+}
+
+footer h5{
+    text-align: left;
+    padding: 20px;
+}
